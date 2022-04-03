@@ -20,7 +20,7 @@ def read_logininfo():
             if line == '':
                 break
             else:
-                print(line, end=' ')
+                print(line)
 
 
 if __name__ == '__main__':
@@ -38,11 +38,11 @@ if __name__ == '__main__':
             elif num == 1:
                 print('查看登录日志')
                 read_logininfo()
-                num = int(input('请输入操作数字：'))
+                num = int(input('输入提示数字，执行相应操作：0.退出 1.查看登录日志'))
             else:
                 print('您输入的字符有误')
                 show_info()
-                num = int(input('输入操作数字：'))
+                num = int(input('输入提示数字，执行相应操作：0.退出 1.查看登录日志'))
     else:
         print('用户名或密码不正确')
 
